@@ -25,7 +25,7 @@ void solve(int *numbers, int no_elems){
         {
             if(numbers[j] == look_for){
                 printf("Numbers: %d, %d\nProduct: %d\n", numbers[i], look_for, numbers[i] * look_for);
-                break;
+                return;
             }
         }
         
