@@ -14,4 +14,16 @@ for number in numbers:
         break
 runTime = time.time()-startTime
 
-print(f'Run time: {runTime}')
+
+startTime = time.time()
+i = 0
+for number in numbers:
+    i+=1
+    look_for = 2020-number
+    if look_for in numbers[i:]:
+        print(f'({number}, {look_for})')
+        print(number*look_for)
+        break
+runTime2 = time.time()-startTime
+
+print(f'Run time: {runTime}\nRun time 2: {runTime2}')
